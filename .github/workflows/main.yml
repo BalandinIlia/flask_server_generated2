@@ -23,6 +23,10 @@ jobs:
     - name: Install precise version of setuptools
       run: |
         pip install setuptools==66.1.1
+
+    - name: Print python packages
+      run: |
+        pip list
     
     - name: Build docker
       run: |
